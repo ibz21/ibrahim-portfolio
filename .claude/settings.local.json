@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python skills/ui-ux-pro-max/scripts/search.py \"portfolio solutions engineer dark technical professional\" --design-system -p \"Ibrahim Kathrada Portfolio\" --stack nextjs)",
+      "Bash(ls \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\"/*.jpeg \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\"/*.jpg)",
+      "Bash(dir /b \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\*.jpeg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\*.jpg\")",
+      "Bash(python \".claude/skills/ui-ux-pro-max/scripts/search.py\" \"portfolio solutions engineer dark technical professional\" --design-system -p \"Ibrahim Kathrada Portfolio\")",
+      "Bash(ls:*)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\IMG_2756.jpeg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\IMG_2755.jpeg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\IMG_20131016_100856.jpeg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\Snapchat-605340614.jpeg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(done)",
+      "Bash(sed -i 's/statusLabel: \"\"Planned · Flagship\"\"/statusLabel: \"\"Next Build\"\"/g' src/components/portfolio/projects.tsx)",
+      "Bash(sed -i 's/statusLabel: \"\"Planned · Phase 2\"\"/statusLabel: \"\"Next Build\"\"/g' src/components/portfolio/projects.tsx)",
+      "Bash(sed -i 's/statusLabel: \"\"Planned · Phase 3\"\"/statusLabel: \"\"Next Build\"\"/g' src/components/portfolio/projects.tsx)",
+      "Bash(sed -i 's/statusLabel: \"\"Planned\"\"/statusLabel: \"\"Next Build\"\"/g' src/components/portfolio/projects.tsx)",
+      "Bash(awk:*)",
+      "Bash(python3.13 - <<'EOF'\nimport re\n\npath = r\"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\src\\\\styles\\\\portfolio.css\"\nwith open\\(path, 'r', encoding='utf-8'\\) as f:\n    css = f.read\\(\\)\n\ndef replace_in_font_body_blocks\\(css\\):\n    result = []\n    i = 0\n    while i < len\\(css\\):\n        brace_open = css.find\\('{', i\\)\n        if brace_open == -1:\n            result.append\\(css[i:]\\)\n            break\n        result.append\\(css[i:brace_open+1]\\)\n        i = brace_open + 1\n        depth = 1\n        j = i\n        while j < len\\(css\\) and depth > 0:\n            if css[j] == '{': depth += 1\n            elif css[j] == '}': depth -= 1\n            j += 1\n        block = css[i:j]\n        if 'var\\(--font-body\\)' in block:\n            block = block.replace\\('var\\(--text-muted\\)', 'var\\(--text-body\\)'\\)\n        result.append\\(block\\)\n        i = j\n    return ''.join\\(result\\)\n\nnew_css = replace_in_font_body_blocks\\(css\\)\n\nwith open\\(path, 'w', encoding='utf-8'\\) as f:\n    f.write\\(new_css\\)\n\nchanged = css.count\\('var\\(--text-muted\\)'\\) - new_css.count\\('var\\(--text-muted\\)'\\)\nprint\\(f\"Replaced in {changed} rule\\(s\\)\"\\)\nEOF)",
+      "Bash(python3.13 - <<'EOF'\nimport re\n\npath = r\"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\src\\\\styles\\\\portfolio.css\"\nwith open\\(path, 'r', encoding='utf-8'\\) as f:\n    css = f.read\\(\\)\n\ndef update_line_height_in_font_body_blocks\\(css\\):\n    result = []\n    i = 0\n    while i < len\\(css\\):\n        brace_open = css.find\\('{', i\\)\n        if brace_open == -1:\n            result.append\\(css[i:]\\)\n            break\n        result.append\\(css[i:brace_open+1]\\)\n        i = brace_open + 1\n        depth = 1\n        j = i\n        while j < len\\(css\\) and depth > 0:\n            if css[j] == '{': depth += 1\n            elif css[j] == '}': depth -= 1\n            j += 1\n        block = css[i:j]\n        if 'var\\(--font-body\\)' in block:\n            block = re.sub\\(r'line-height:\\\\s*[\\\\d.]+', 'line-height: 1.75', block\\)\n        result.append\\(block\\)\n        i = j\n    return ''.join\\(result\\)\n\nnew_css = update_line_height_in_font_body_blocks\\(css\\)\n\nwith open\\(path, 'w', encoding='utf-8'\\) as f:\n    f.write\\(new_css\\)\n\noriginal_values = re.findall\\(r'line-height:\\\\s*\\([\\\\d.]+\\)', css\\)\nnew_values = re.findall\\(r'line-height:\\\\s*\\([\\\\d.]+\\)', new_css\\)\nchanged = sum\\(1 for a, b in zip\\(original_values, new_values\\) if a != b\\)\nprint\\(f\"Updated line-height in {changed} font-body rule\\(s\\)\"\\)\nEOF)",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\ac-shaft-couplings-tidal.jpg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\Cement_Factory_1.jpg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\Chillers_thumb.jpg\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\dec_nuclear_containment.avif\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\collett_girder_bridge.png\" \"C:\\\\Users\\\\Business\\\\ibrahim-portfolio\\\\untitledui-nextjs-starter-kit\\\\public\\\\images/\")",
+      "Bash(cp \"C:/Users/Business/ibrahim-portfolio/airedale_datacentre.jpg\" \"C:/Users/Business/ibrahim-portfolio/untitledui-nextjs-starter-kit/public/images/airedale_datacentre.jpg\")",
+      "Bash(cp \"C:/Users/Business/ibrahim-portfolio/Dec_isolators.avif\" \"C:/Users/Business/ibrahim-portfolio/untitledui-nextjs-starter-kit/public/images/Dec_isolators.avif\")"
+    ]
+  }
+}

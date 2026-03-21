@@ -25,7 +25,8 @@
         "tailwind-merge": "^3.4.0",
         "tailwindcss": "^4.1.18",
         "tailwindcss-animate": "^1.0.7",
-        "tailwindcss-react-aria-components": "^2.0.1"
+        "tailwindcss-react-aria-components": "^2.0.1",
+        "untitledui-nextjs-starter-kit": "file:"
     },
     "devDependencies": {
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
