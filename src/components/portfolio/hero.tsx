@@ -6,44 +6,44 @@ const STATS = [
     {
         number: "99",
         unit: "%",
-        tolerance: "// maintained across full tenure",
+        tolerance: "// CSAT maintained",
         label: "CSAT_SCORE",
-        context: "KnowBe4 · 70,000+ orgs globally",
+        context: "KnowBe4 · enterprise support",
+    },
+    {
+        number: "20",
+        unit: "+",
+        tolerance: "// tailored POC demos",
+        label: "POC_DEMOS",
+        context: "Ring2Book · sole technical authority",
+    },
+    {
+        number: "250",
+        unit: "+",
+        tolerance: "// engineers trained",
+        label: "ENGINEERS_TRAINED",
+        context: "Graitec · ACI certified",
     },
     {
         number: "65",
         unit: "%",
         tolerance: "// design time reduction",
         label: "EFFICIENCY_GAIN",
-        context: "Bibby Turboflex · £572k trigger project",
+        context: "Bibby Turboflex · £572k trigger",
     },
     {
-        number: "250",
-        unit: "+",
-        tolerance: "// across 30–40 client organisations",
-        label: "ENGINEERS_TRAINED",
-        context: "Graitec · Autodesk Certified Instructor",
-    },
-    {
-        number: "2.8",
+        number: "2.8–4.4",
         unit: "×",
-        tolerance: "// Standard plan baseline",
-        label: "ROI_DELIVERED",
-        context: "Ring2Book · ~£550/month recovered",
+        tolerance: "// modelled ROI range",
+        label: "ROI_RANGE",
+        context: "Ring2Book · pilot-backed",
     },
     {
-        number: "£1.8m",
-        unit: "",
-        tolerance: "// 9 gearboxes · 3 ships · 6 years",
-        label: "CONTRACT_VALUE",
-        context: "Collett and Sons · marine programme",
-    },
-    {
-        number: "20",
+        number: "10,000",
         unit: "+",
-        tolerance: "// tailored to each prospect stack",
-        label: "POC_DEMOS",
-        context: "Ring2Book · sole technical authority",
+        tolerance: "// users supported",
+        label: "USERS_SUPPORTED",
+        context: "KnowBe4 · MSP and multi-tenant",
     },
 ];
 
@@ -75,15 +75,20 @@ export function Hero() {
                 </motion.h1>
 
                 <motion.p variants={item} className="hero-role">
-                    Solutions Engineer · APIs, Integrations &amp; Implementation · Building toward DevOps and Backend
+                    Solutions Engineer | APIs, Integrations &amp; Implementation | SaaS · Onboarding · Technical Discovery
+                </motion.p>
+
+                <motion.p variants={item} className="hero-role">
+                    Building backend and cloud capability in public: github.com/ibz21
                 </motion.p>
 
                 <motion.p variants={item} className="hero-summary">
-                    Ten years across precision engineering, enterprise SaaS, and critical infrastructure.
-                    Solutions engineer with a consistent record of technical discovery, integration design,
-                    proof-of-concept delivery, onboarding, and commercial handover — from ANSYS FEA on
-                    14,000rpm turbomachinery to building Ring2Book&apos;s full SE function from scratch.
-                    Now building backend and cloud depth in public at github.com/ibz21.
+                    Solutions engineer with 10 years across enterprise SaaS, technical pre-sales, and complex engineering environments.
+                    Built Ring2Book&apos;s complete SE function from scratch as the sole technical authority: 20+ tailored POC engagements
+                    across API, webhook, messaging, and workflow integrations, with pilot data validating 2.8–4.4× ROI.
+                    Maintained 99% CSAT at KnowBe4 across complex enterprise environments spanning SSO, SCIM, Okta, Microsoft Active Directory,
+                    and Mimecast. At Airedale, ran a multi-million pound Frankfurt hyperscale programme alongside the Commercial Lead.
+                    Now building backend and cloud capability in public at github.com/ibz21.
                 </motion.p>
 
                 <motion.div variants={item} className="hero-stats">
