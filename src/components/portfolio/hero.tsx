@@ -28,7 +28,7 @@ const STATS = [
         number: "65",
         unit: "%",
         tolerance: "// design time reduction",
-        label: "EFFICIENCY_GAIN",
+        label: "DESIGN_EFFICIENCY",
         context: "Bibby Turboflex · £572k trigger",
     },
     {
