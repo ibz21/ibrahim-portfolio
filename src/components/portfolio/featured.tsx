@@ -23,10 +23,10 @@ const RESULT_METRICS = [
 ];
 
 const BULLETS = [
-    "Designed the full 8-stage automation architecture from nothing, turning a concept into a product with a defined and repeatable shape — including the workflow design, the scope boundary decisions, the demo environment build, and the scoping templates used across every single sales conversation.",
-    "Ran more than 20 tailored proof-of-concept demos, each one preceded by discovery to map the prospect's existing tools, then built to show Ring2Book running within that environment rather than presenting a generic walkthrough.",
-    "Served as the sole technical reviewer for all proposed configurations, mapping API and webhook requirements before any commercial commitment was made, identifying what was native, what needed a workaround, and what was out of scope.",
-    "Built the ROI model as a working calculation using actual prospect call volumes and job values, producing a specific monthly recovery figure per prospect rather than a marketing estimate.",
+    "Designed the full eight-stage workflow from missed call detection through outreach, qualification, approval, booking, and reporting. Turned a concept into a product with a defined and repeatable shape.",
+    "Ran 20+ tailored proof-of-concept demos, each built around the prospect's existing tools, workflow, and constraints. Every demo ran live within that environment, not against a generic walkthrough.",
+    "Mapped API, webhook, messaging, and routing requirements before any commercial commitment, defining what was native, what needed a workaround, and what was out of scope.",
+    "Built the ROI model using actual prospect call volumes and job values to produce a specific commercial case for each prospect.",
 ];
 
 export function Featured() {
@@ -67,12 +67,7 @@ export function Featured() {
                         <div className="problem-box">
                             <div className="problem-label">// problem statement</div>
                             <p className="problem-text">
-                                UK tradespeople miss between 25 and 47 percent of inbound calls. Each missed
-                                emergency call forfeits approximately £110 in revenue, compounding to between
-                                £1,000 and £2,000 per month in lost income for a sole trader. No WhatsApp-native
-                                solution existed in this segment. FSM platforms like Jobber are overbuilt and take
-                                weeks to deploy. Ring2Book fills the gap with narrow scope, fast deployment, and
-                                measurable revenue recovery from the first month.
+                                UK trades businesses lose revenue when inbound calls go unanswered, particularly on emergency and out-of-hours work. Ring2Book was designed to recover that missed demand through a narrow, fast-to-deploy workflow: immediate outreach, lead capture, qualification, approval, booking, and reporting. The scope stayed deliberately focused on missed-call recovery and measurable commercial impact, not broad field service management.
                             </p>
                         </div>
 
@@ -134,11 +129,11 @@ export function Featured() {
                         }}>
                             {[
                                 "Technical discovery",
+                                "Solution design",
                                 "Integration mapping",
                                 "Demo delivery",
-                                "Feasibility judgement",
                                 "Scope control",
-                                "Commercial translation",
+                                "Commercial feasibility",
                             ].map((item) => (
                                 <div key={item} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                                     <span style={{ color: "var(--accent)", fontSize: "0.7rem", lineHeight: 1 }}>›</span>
