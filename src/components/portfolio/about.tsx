@@ -26,8 +26,8 @@ const CREDENTIALS = [
         date: "2013 · Energy storage",
     },
     {
-        title: "Active Learning",
-        sub: "Bandit · Linux Upskill · CS50P",
+        title: "Current Technical Development",
+        sub: "Structured 24-week programme tracked publicly at github.com/ibz21. Built around solutions engineering and implementation use cases: APIs, webhooks, onboarding flows, integration troubleshooting, and technical documentation. Working output at each stage.",
         date: "2025 ongoing",
     },
 ];
@@ -56,32 +56,31 @@ export function About() {
                         transition={{ duration: 0.55, delay: 0.1, ease: "easeOut" }}
                     >
                         <p>
-                            The career started in precision engineering at Bibby Turboflex, designing bespoke
-                            high-performance disc couplings for oil and gas turbomachinery: full 3D models,
-                            torsional vibration analysis, ANSYS FEA at 14,000rpm, and proposals costed from
-                            first principles on jobs ranging from £20,000 to over £500,000. Every job required
-                            direct client contact, engineering judgement, and enough commercial awareness to
-                            price accurately from raw material through to shopfloor hours.
+                            The career has moved consistently toward work where technical scoping, customer need, and commercial decisions meet.
                         </p>
 
                         <p>
-                            From there, Autodesk certified training and pre-sales at Graitec — 250 engineers
-                            trained across 30 to 40 client organisations, and a solo 60-minute presentation to
-                            200 people at a London conference. Then site engineering at Collett and Sons,
-                            producing FEM simulation and multi-stage ground pressure calculations for 185-tonne
-                            power transformer moves onto National Grid substations. Then KnowBe4, maintaining
-                            99% CSAT across the most complex enterprise accounts on the platform. Then Airedale,
-                            running a multi-million pound Frankfurt hyperscale data centre project alongside the
-                            Commercial Lead through Phase 3 of 5.
+                            At Bibby Turboflex, every job ran end-to-end from RFQ through design, costing, and proposal, with direct client contact throughout. Proposals were priced from first principles on jobs from £20,000 to over £500,000. Each job covered discovery, design, quotation, and ownership from initial enquiry through to delivery.
                         </p>
 
                         <p>
-                            Now Ring2Book, as the sole technical person in the business — building the product
-                            from a concept, running more than 20 tailored pre-sales demos, and serving as the
-                            only technical authority between a prospect and a commercial commitment. The BEng in
-                            Mechanical Engineering and Autodesk Certified Instructor qualification sit alongside
-                            active work on Linux, Python, FastAPI, and Docker, tracked publicly on GitHub through
-                            a structured 24-week programme.
+                            At Graitec, a SaaS and professional services business built around the Autodesk platform, the work moved into pre-sales and enablement: running technical discovery and demos alongside account executives, building iLogic configurations to show automation against each prospect&apos;s actual workflow, delivering webinars to support upsell, and training 250+ engineers across 30 to 40 client organisations. This period also included a solo 60-minute technical presentation to 200 engineers at a London conference.
+                        </p>
+
+                        <p>
+                            From there, Lead Project Engineer at Collett and Sons, a specialist heavy haulage firm, with responsibility for 100 to 300 tonne transformer moves for National Grid, ABB, and Siemens. Each operation was underpinned by detailed calculations, route assessment, and risk analysis. Then Extract Technology, brought in specifically for Autodesk Vault expertise to lead a cross-border design migration across UK, Polish, and US engineering teams.
+                        </p>
+
+                        <p>
+                            At KnowBe4, the focus was the most complex enterprise accounts on the platform: MSP and multi-tenant deployments with 10,000+ users, SSO across Okta and Microsoft AD, SCIM provisioning, Mimecast configuration, and 99% CSAT maintained throughout. The role combined discovery, debugging, and practical solutions across a wide range of technical issues.
+                        </p>
+
+                        <p>
+                            At Airedale, a multi-million pound Frankfurt hyperscale programme alongside the Commercial Lead through Phase 3 of 5: RFP and RFQ responses, contract negotiation, costing justifications, and SAP order processing for clients including Google and Oracle.
+                        </p>
+
+                        <p>
+                            Now Ring2Book: the sole technical person in the business from day one. The missed-call recovery workflow was built from scratch, more than 20 tailored pre-sales demos were delivered, and the role served as the only technical authority between a prospect and a commercial commitment.
                         </p>
                     </motion.div>
 
