@@ -281,11 +281,10 @@ export function Projects() {
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
                 >
-                    These projects are being built as part of a structured career roadmap focused on
-                    Technical Solutions Engineering, backend and API credibility, and staged DevOps depth.
-                    Each is designed to demonstrate real job-relevant skills — integrations, documentation,
-                    testing, deployment, troubleshooting, and technical communication — rather than
-                    generic tutorial builds.
+                    These projects are built as part of a structured career roadmap focused on solutions
+                    engineering, backend and API depth, and staged DevOps capability. Each is designed to
+                    demonstrate real job-relevant skills: integrations, documentation, testing, deployment,
+                    troubleshooting, and technical communication.
                 </motion.p>
 
                 <ProjectCategory
