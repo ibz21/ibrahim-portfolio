@@ -32,13 +32,15 @@ const ROLES: Role[] = [
         title: "Solutions Engineer and Product Lead",
         company: "Ring2Book · Remote",
         context:
-            "SaaS startup built to convert missed calls into confirmed bookings for UK tradespeople. No technical person was in the business on joining. Every product decision, demo environment, integration mapping, and feasibility call passed through this role as the sole technical authority.",
+            "SaaS startup built to convert missed calls into confirmed bookings for UK tradespeople. There was no technical person in the business before this role. Every product decision, demo environment, integration mapping, and feasibility call ran through here as the sole technical authority.",
         responsibilities:
             "Product definition from zero, pre-sales engineering, proof-of-concept demo delivery, feasibility gating, and technical sign-off for all proposed configurations before any commercial commitment was made.",
         achievements: [
-            "Designed the full missed-call recovery workflow from nothing — eight stages from Twilio call detection through WhatsApp outreach, qualification, Softr approval, Stripe deposit, Calendly booking, and ROI dashboard.",
-            "Validated the product model through pilot implementations demonstrating approximately £550 recovered per client per month, with a 2.8x return on the Standard plan rising to 4.4x with deposit collection active.",
+            "Designed the full missed-call recovery workflow from nothing: eight stages from Twilio call detection through WhatsApp outreach, qualification, Softr approval, Stripe deposit, Calendly booking, and ROI dashboard.",
+            "Pilot implementations validated the product model: approximately £550 recovered per client per month, 2.8× on the Standard plan, rising to 4.4× with deposit collection active.",
             "Delivered more than 20 tailored proof-of-concept demos and served as the sole technical reviewer across every configuration before build.",
+            "Productised delivery into a repeatable deployment model. Clients went live in two to three weeks through standard integration patterns, with configuration adapted to each client's tool stack.",
+            "Produced all platform documentation, integration maps, scoping templates, and onboarding playbooks from scratch.",
         ],
         outcomes: [
             { metric: "20+", label: "Tailored POC demos" },
