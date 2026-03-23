@@ -5,7 +5,7 @@ import { Featured } from "@/components/portfolio/featured";
 import { Experience } from "@/components/portfolio/experience";
 import { Projects } from "@/components/portfolio/projects";
 import { Skills } from "@/components/portfolio/skills";
-import { Building } from "@/components/portfolio/building";
+import { BuildingWrapper } from "@/components/portfolio/building-wrapper";
 import { Contact } from "@/components/portfolio/contact";
 
 export default function PortfolioPage() {
@@ -25,7 +25,7 @@ export default function PortfolioPage() {
                 <Experience />
                 <Projects />
                 <Skills />
-                <Building />
+                <BuildingWrapper />
                 <Contact />
             </main>
         </>

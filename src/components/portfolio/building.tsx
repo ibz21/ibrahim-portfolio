@@ -4,7 +4,11 @@ import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
 
-export function Building() {
+interface BuildingProps {
+    commitCount: number;
+}
+
+export function Building({ commitCount }: BuildingProps) {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true, amount: 0.05 });
 
@@ -28,12 +32,9 @@ export function Building() {
                 >
                     <div>
                         <p className="building-intro">
-                            A structured 24-week engineering programme building backend, API, cloud, and DevOps
+                            A structured engineering programme building backend, API, cloud, and DevOps
                             depth from first principles. Everything is tracked publicly on GitHub: weekly notes
                             in markdown, proof screenshots from labs, and projects deployed as they are built.
-                            The programme covers Linux, Python, FastAPI, PostgreSQL, Docker, GitHub Actions,
-                            AWS, Terraform, Kubernetes, Helm, and GitOps — in that order, with working output
-                            at each stage.
                         </p>
 
                         {/* Three-path specialisation note */}
@@ -63,52 +64,52 @@ export function Building() {
                                 <div className="week-row">
                                     <div className="week-indicator done" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 0 — Audit and setup</div>
+                                        <div className="week-label">Module 0 — Audit and setup</div>
                                         <div className="week-detail">GitHub repo created, folder structure committed, goals and role targets documented at github.com/ibz21</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator active" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 1 — Linux and Git</div>
-                                        <div className="week-detail">OverTheWire Bandit started. 10 commits pushed. Day 3.</div>
+                                        <div className="week-label">Module 1 — Linux and Git</div>
+                                        <div className="week-detail">Linux fundamentals, file system, permissions, and Git basics.</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 2 — Linux deeper</div>
+                                        <div className="week-label">Module 2 — Linux deeper</div>
                                         <div className="week-detail">permissions, processes, bash scripting</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 3 — Python foundations via CS50P</div>
+                                        <div className="week-label">Module 3 — Python foundations</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 4 — Python files, JSON, calling APIs</div>
+                                        <div className="week-label">Module 4 — Python files, JSON, APIs</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 5 — Networking and HTTP fundamentals</div>
+                                        <div className="week-label">Module 5 — Networking and HTTP</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Week 6 — SQL and PostgreSQL</div>
+                                        <div className="week-label">Module 6 — SQL and PostgreSQL</div>
                                     </div>
                                 </div>
                                 <div className="week-row">
                                     <div className="week-indicator planned" aria-hidden="true" />
                                     <div className="week-content">
-                                        <div className="week-label">Weeks 7 and 8 — FastAPI and API design with tests</div>
+                                        <div className="week-label">Module 7 — FastAPI and API design</div>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +181,7 @@ export function Building() {
                             <div className="github-stats">
                                 <div className="github-stat">
                                     <span className="github-stat-label">Commits</span>
-                                    <span className="github-stat-value">10</span>
+                                    <span className="github-stat-value">{commitCount}</span>
                                 </div>
                                 <div className="github-stat">
                                     <span className="github-stat-label">Repositories</span>
@@ -198,7 +199,7 @@ export function Building() {
                                 rel="noopener noreferrer"
                                 className="github-link"
                             >
-                                View on GitHub →
+                                Progress, notes, and project repos tracked live at github.com/ibz21
                             </a>
                         </div>
                     </div>
