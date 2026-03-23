@@ -27,8 +27,8 @@ const CREDENTIALS = [
     },
     {
         title: "Current Technical Development",
-        sub: "Structured 24-week programme tracked publicly at github.com/ibz21. Built around solutions engineering and implementation use cases: APIs, webhooks, onboarding flows, integration troubleshooting, and technical documentation. Working output at each stage.",
-        date: "2025 ongoing",
+        sub: "Linux · Python · FastAPI · PostgreSQL · Docker · GitHub Actions · AWS · Terraform",
+        date: "2026 ongoing",
     },
 ];
 
@@ -81,6 +81,12 @@ export function About() {
 
                         <p>
                             Now Ring2Book: the sole technical person in the business from day one. The missed-call recovery workflow was built from scratch, more than 20 tailored pre-sales demos were delivered, and the role served as the only technical authority between a prospect and a commercial commitment.
+                        </p>
+
+                        <span className="section-label">Current Technical Development</span>
+
+                        <p>
+                            Structured 24-week programme tracked publicly at github.com/ibz21. Built around solutions engineering and implementation use cases: APIs, webhooks, onboarding flows, integration troubleshooting, and technical documentation. Working output at each stage.
                         </p>
                     </motion.div>
 

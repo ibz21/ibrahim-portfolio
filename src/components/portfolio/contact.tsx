@@ -99,7 +99,7 @@ export function Contact() {
                     animate={inView ? { opacity: 1 } : {}}
                     transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
                 >
-                    Built with precision · Steel and Copper · 2025
+                    Built with precision · Steel and Copper · 2026
                 </motion.div>
             </div>
         </section>
