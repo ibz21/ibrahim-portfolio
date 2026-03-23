@@ -34,7 +34,7 @@ const ENGINEERING_PROJECTS: Project[] = [
         ],
         image: "/images/IMG_20131016_100856.jpeg",
         imageAlt: "Overhead view of IMechE Railway Challenge bogie assembly on track with steel flanged wheels and chain drive",
-        imageHeight: 160,
+        imageHeight: 220,
     },
     {
         title: "Collett FEM Engineering",
@@ -180,8 +180,8 @@ function ProjectCard({ project }: { project: Project }) {
                             src={img.src}
                             alt={img.alt}
                             width={300}
-                            height={140}
-                            style={{ objectFit: "cover", width: "100%", height: "140px" }}
+                            height={220}
+                            style={{ objectFit: "cover", width: "100%", height: "220px" }}
                         />
                     ))}
                 </div>
@@ -193,7 +193,7 @@ function ProjectCard({ project }: { project: Project }) {
                     width={500}
                     height={160}
                     className="project-image"
-                    style={{ height: `${project.imageHeight || 160}px` }}
+                    style={{ height: `${project.imageHeight || 160}px`, objectFit: "cover" }}
                 />
             )}
 
